@@ -3,6 +3,7 @@
 [![Build Status](https://travis-ci.org/wildlyinaccurate/angular-readable-time.png?branch=master)](https://travis-ci.org/wildlyinaccurate/angular-readable-time)
 
 AngularJS filter for converting a number of seconds to a human-readable time.
+This fork is modded to provide more specific output.
 
 ## Usage
 
@@ -22,14 +23,14 @@ Use the filter by passing it a number of seconds.
 
 ```html
 <p>{{ 60 | readableTime }}</p>
-<p>{{ 128000 | readableTime }}</p>
+<p>{{ 3738512 | readableTime }}</p>
 ```
 
 The above example will look something like this:
 
 > 1 minute
 >
-> 2 weeks
+> 1 month 1 week 5 days 22 hours 28 minutes 32 seconds
 
 ## License
 
