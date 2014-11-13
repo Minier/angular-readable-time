@@ -42,8 +42,10 @@
                     output += format(Math.floor(toParse / minute), 'minute');
                     parse(toParse % minute);
                     break;
-                default:
+                case (toParse > 0):
                     output += format(toParse, 'second');
+                default:
+                    return false;
             }
         };
 
