@@ -18,27 +18,27 @@
 
         parse = function (toParse) {
             switch (true) {
-                case (toParse > year):
+                case (toParse >= year):
                     output += format(Math.floor(toParse / year), 'year');
                     parse(toParse % year);
                     break;
-                case (toParse > month):
+                case (toParse >= month):
                     output += format(Math.floor(toParse / month), 'month');
                     parse(toParse % month);
                     break;
-                case (toParse > week):
+                case (toParse >= week):
                     output += format(Math.floor(toParse / week), 'week');
                     parse(toParse % week);
                     break;
-                case (toParse > day):
+                case (toParse >= day):
                     output += format(Math.floor(toParse / day), 'day');
                     parse(toParse % day);
                     break;
-                case (toParse > hour):
+                case (toParse >= hour):
                     output += format(Math.floor(toParse / hour), 'hour');
                     parse(toParse % hour);
                     break;
-                case (toParse > minute):
+                case (toParse >= minute):
                     output += format(Math.floor(toParse / minute), 'minute');
                     parse(toParse % minute);
                     break;
